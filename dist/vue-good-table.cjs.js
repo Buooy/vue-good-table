@@ -13999,6 +13999,7 @@ var script$6 = {
       var total = 0;
       lodash_foreach(this.processedRows, function (headerRow) {
         total += headerRow.children ? headerRow.children.length : 0;
+        total += 1;
       });
       return total;
     },
@@ -14006,6 +14007,7 @@ var script$6 = {
       var total = 0;
       lodash_foreach(this.paginated, function (headerRow) {
         total += headerRow.children ? headerRow.children.length : 0;
+        total += 1;
       });
       return total;
     },
